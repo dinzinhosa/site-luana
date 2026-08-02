@@ -1,6 +1,15 @@
 import './App.css'
 import conteudo from './conteudo.json'
 
+// Função simples para converter Markdown básico (**negrito** e *itálico*) em HTML
+function parseMarkdown(text) {
+  if (!text) return "";
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Transforma **texto** em <strong>
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')             // Transforma *texto* em <em>
+    .replace(/\n/g, '<br />');                        // Respeita as quebras de linha
+}
+
 function App() {
   return (
     <div className="container">
@@ -50,8 +59,8 @@ function App() {
           
           <h3 className="sub-heading">{conteudo.heroTituloConsulta}</h3>
           
-          {/* Descrição em Markdown renderizada como HTML */}
-          <div dangerouslySetInnerHTML={{ __html: conteudo.heroDescricao }} />
+          {/* Descrição com conversão de Markdown */}
+          <div dangerouslySetInnerHTML={{ __html: parseMarkdown(conteudo.heroDescricao) }} />
         
           <a href={conteudo.contatoLinkZap} target="_blank" rel="noreferrer">
             <button className="btn-dark-blue">Agende sua consulta</button>
@@ -65,8 +74,8 @@ function App() {
           <div className="section-container about-grid">
             <div className="about-text">
               <h3>{conteudo.sobreTitulo}</h3>
-              {/* Texto sobre em Markdown renderizado como HTML */}
-              <div dangerouslySetInnerHTML={{ __html: conteudo.sobreTexto }} />
+              {/* Texto Sobre com conversão de Markdown */}
+              <div dangerouslySetInnerHTML={{ __html: parseMarkdown(conteudo.sobreTexto) }} />
             </div>
             <div className="about-image">
               {conteudo.imagemSobre ? (
@@ -87,8 +96,8 @@ function App() {
               {conteudo.servicos && conteudo.servicos.map((servico, index) => (
                 <div className="card" key={index}>
                   <h4>{servico.titulo}</h4>
-                  {/* Descrição do serviço em Markdown renderizada como HTML */}
-                  <div dangerouslySetInnerHTML={{ __html: servico.descricao }} />
+                  {/* Descrição do serviço com conversão de Markdown */}
+                  <div dangerouslySetInnerHTML={{ __html: parseMarkdown(servico.descricao) }} />
                 </div>
               ))}
             </div>
