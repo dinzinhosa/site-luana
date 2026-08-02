@@ -5,15 +5,15 @@ function App() {
   return (
     <div className="container">
       
-      {/* HEADER DIVIDIDO 50/50 */}
+      {/* HEADER */}
       <header className="main-header">
         <div className="header-left">
           <div className="logo-container">
-            <div className="logo-icon">🧠</div> {/* Simulando a logo */}
+            <div className="logo-icon">🧠</div>
             <div className="logo-text">
               <span className="logo-name">{conteudo.heroNome}</span>
               <span className="logo-title">{conteudo.heroEspecialidade}</span>
-          </div>
+            </div>
           </div>
         </div>
         
@@ -31,36 +31,37 @@ function App() {
         </div>
       </header>
 
-      {/* HERO DIVIDIDO 50/50 (SEM VAZAR ALTURA) */}
+      {/* HERO */}
       <section id="inicio" className="hero-split">
         <div className="hero-image-container">
-          {/* Espaço reservado para a foto cobrir tudo */}
           <div className="image-placeholder">Sua foto aqui</div>
         </div>
         
         <div className="hero-text-container">
-          <h1>Dra. Luana Silva</h1>
-          <h2>Médica Psiquiatra</h2>
-          <span className="crm">CRM-RJ 123456 | RQE 12345</span>
+          <h1>{conteudo.heroNome}</h1>
+          <h2>{conteudo.heroEspecialidade}</h2>
+          <span className="crm">{conteudo.heroCrm}</span>
           
-          <p className="highlight-text">Atendimento psiquiátrico particular presencial e por teleconsulta para todo o Brasil</p>
+          <p className="highlight-text">{conteudo.heroDestaque}</p>
           
-          <h3 className="sub-heading">Consulta psiquiátrica com tempo e profundidade</h3>
-          <p>Primeira consulta com 1:30h de duração, para uma avaliação cuidadosa e sem pressa.</p>
+          <h3 className="sub-heading">{conteudo.heroTituloConsulta}</h3>
+          <p>{conteudo.heroDescricao}</p>
           <p>Contato entre as consultas para tirar suas dúvidas e dar orientações.</p>
           <p>Fale com a minha equipe pelo WhatsApp para mais informações e disponibilidade.</p>
           
-          <button className="btn-dark-blue">Agende sua consulta</button>
+          <a href={conteudo.contatoLinkZap} target="_blank" rel="noreferrer">
+            <button className="btn-dark-blue">Agende sua consulta</button>
+          </a>
         </div>
       </section>
 
       <main>
-        {/* Seção Sobre a Médica (Restaurada) */}
+        {/* SOBRE */}
         <section id="sobre" className="about bg-gray">
           <div className="section-container about-grid">
             <div className="about-text">
-              <h3>Sobre mim</h3>
-              <p>Sou a Dra. Luana, psiquiatra com graduação e residência médica. Ao longo dos anos, tive a oportunidade de atender pacientes apresentando algum sofrimento psíquico e pude perceber que, com um olhar integral, é possível restabelecer o bem-estar e a qualidade de vida.</p>
+              <h3>{conteudo.sobreTitulo}</h3>
+              <p>{conteudo.sobreTexto}</p>
             </div>
             <div className="about-image">
               <div className="placeholder-img">[Foto do Consultório ou Logos]</div>
@@ -68,7 +69,7 @@ function App() {
           </div>
         </section>
 
-        {/* Seção de Especialidades (Restaurada) */}
+        {/* SERVIÇOS (Mantidos estáticos por enquanto, a menos que você queira gerenciar no painel também) */}
         <section id="servicos" className="services">
           <div className="section-container">
             <h3>Do que podemos cuidar nas consultas?</h3>
@@ -93,23 +94,25 @@ function App() {
           </div>
         </section>
 
-        {/* Seção de Contato (Restaurada) */}
+        {/* CONTATO */}
         <section id="contato" className="contact bg-gray">
           <div className="section-container contact-box">
             <h3>Detalhes para contato</h3>
             <p>Se você tem alguma dúvida ou deseja agendar, entre em contato conosco:</p>
             <div className="contact-info">
-              <p>📍 Rua do Consultório, 100 - Bairro, Cidade</p>
-              <p>📞 (11) 99999-9999</p>
+              <p>{conteudo.contatoEndereco}</p>
+              <p>{conteudo.contatoTelefone}</p>
             </div>
-            <button className="btn-dark-blue">Fale com a minha equipe no WhatsApp</button>
+            <a href={conteudo.contatoLinkZap} target="_blank" rel="noreferrer">
+              <button className="btn-dark-blue">Fale com a minha equipe no WhatsApp</button>
+            </a>
           </div>
         </section>
       </main>
 
-      {/* Rodapé (Restaurado) */}
+      {/* RODAPÉ */}
       <footer>
-        <p>© 2026 Dra. Luana Psiquiatra.</p>
+        <p>© 2026 {conteudo.heroNome}.</p>
       </footer>
     </div>
   )

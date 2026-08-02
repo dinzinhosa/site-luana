@@ -9,22 +9,20 @@ public_folder: "/images/uploads"
 
 collections:
   - name: "paginas"
-    label: "Conteúdo do Site"
+    label: "Páginas do Site"
     files:
-      - label: "Textos da Página Principal"
-        name: "home"
+      - label: "Conteúdo Principal"
+        name: "conteudo"
         file: "src/conteudo.json"
         fields:
-          - { label: "(Hero) Nome da Médica", name: "heroNome", widget: "string", default: "Dra. Luana Silva" }
-          - { label: "(Hero) Especialidade", name: "heroEspecialidade", widget: "string", default: "Médica Psiquiatra" }
-          - { label: "(Hero) CRM e RQE", name: "heroCrm", widget: "string", default: "CRM-RJ 123456 | RQE 12345" }
-          - { label: "(Hero) Frase em Destaque (Latão)", name: "heroDestaque", widget: "string", default: "Atendimento psiquiátrico particular presencial e por teleconsulta para todo o Brasil" }
-          - { label: "(Hero) Título Principal da Consulta", name: "heroTituloConsulta", widget: "string", default: "Consulta psiquiátrica com tempo e profundidade" }
-          - { label: "(Hero) Descrição das Consultas", name: "heroDescricao", widget: "text", default: "Primeira consulta com 1:30h de duração, para uma avaliação cuidadosa e sem pressa..." }
-          - { label: "(Hero) Foto Principal da Médica", name: "heroFoto", widget: "image", required: false }
-          - { label: "(Sobre mim) Título da Seção", name: "sobreTitulo", widget: "string", default: "Sobre mim" }
-          - { label: "(Sobre mim) Texto de Apresentação", name: "sobreTexto", widget: "markdown", default: "Sou a Dra. Luana, psiquiatra com graduação e residência médica..." }
-          - { label: "(Sobre mim) Foto do Consultório ou Apoio", name: "sobreFoto", widget: "image", required: false }
-          - { label: "(Contato) Endereço do Consultório", name: "contatoEndereco", widget: "string", default: "📍 Rua do Consultório, 100 - Bairro, Cidade" }
-          - { label: "(Contato) Telefone / WhatsApp", name: "contatoTelefone", widget: "string", default: "📞 (11) 99999-9999" }
-          - { label: "(Contato) Link do WhatsApp (para o botão)", name: "contatoLinkZap", widget: "string", default: "https://wa.me/5511999999999" }
+          - { label: "Nome da Médica", name: "heroNome", widget: "string" }
+          - { label: "Especialidade", name: "heroEspecialidade", widget: "string" }
+          - { label: "CRM", name: "heroCrm", widget: "string" }
+          - { label: "Frase de Destaque", name: "heroDestaque", widget: "string" }
+          - { label: "Título da Consulta", name: "heroTituloConsulta", widget: "string" }
+          - { label: "Descrição da Consulta", name: "heroDescricao", widget: "text" }
+          - { label: "Título da Seção Sobre", name: "sobreTitulo", widget: "string" }
+          - { label: "Texto da Seção Sobre", name: "sobreTexto", widget: "text" }
+          - { label: "Endereço", name: "contatoEndereco", widget: "string" }
+          - { label: "Telefone", name: "contatoTelefone", widget: "string" }
+          - { label: "Link do WhatsApp", name: "contatoLinkZap", widget: "string" }
