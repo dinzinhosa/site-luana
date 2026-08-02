@@ -1,29 +1,13 @@
 {
-<<<<<<< HEAD
   "heroNome": "Dra. Luana Laurito",
-=======
-  "heroNome": "Dra. Luana Silva",
->>>>>>> 0b30c26 (Configurando painel admin e deploy para GitHub Pages)
   "heroEspecialidade": "Médica Psiquiatra",
   "heroCrm": "CRM-RJ 123456 | RQE 12345",
   "heroDestaque": "Atendimento psiquiátrico particular presencial e por teleconsulta para todo o Brasil",
   "heroTituloConsulta": "Consulta psiquiátrica com tempo e profundidade",
-<<<<<<< HEAD
   "heroDescricao": "Primeira consulta com 1:30h de duração, para uma avaliação cuidadosa e sem pressa...",
-  "heroFoto": "",
   "sobreTitulo": "Sobre mim",
   "sobreTexto": "Sou a Dra. Luana, psiquiatra com graduação e residência médica...",
-  "sobreFoto": "",
   "contatoEndereco": "📍 Rua do Consultório, 100 - Bairro, Cidade",
   "contatoTelefone": "📞 (11) 99999-9999",
   "contatoLinkZap": "https://wa.me/5511999999999"
 }
-=======
-  "heroDescricao": "Primeira consulta com 1:30h de duração, para uma avaliação cuidadosa e sem pressa. Contato entre as consultas para tirar suas dúvidas e dar orientações.",
-  "sobreTitulo": "Sobre mim",
-  "sobreTexto": "Sou a Dra. Luana, psiquiatra com graduação e residência médica. Ao longo dos anos, tive a oportunidade de atender pacientes apresentando algum sofrimento psíquico e pude perceber que, com um olhar integral, é possível restabelecer o bem-estar e a qualidade de vida.",
-  "contatoEndereco": "📍 Rua do Consultório, 100 - Bairro, Cidade",
-  "contatoTelefone": "📞 (11) 99999-9999",
-  "contatoLinkZap": "https://wa.me/5511999999999"
-}
->>>>>>> 0b30c26 (Configurando painel admin e deploy para GitHub Pages)
