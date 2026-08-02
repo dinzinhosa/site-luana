@@ -345,3 +345,66 @@ footer {
   background-color: #efe8dc;
   border-top: 1px solid #A1886B;
 }
+
+/* ========================================= */
+/* ADAPTAÇÃO PARA CELULARES (Telas até 768px) */
+/* ========================================= */
+@media screen and (max-width: 768px) {
+
+  /* 1. Header: Empilha a logo e o menu em vez de deixar 50/50 */
+  .main-header {
+    flex-direction: column;
+    padding: 15px;
+    height: auto;
+  }
+
+  .header-right {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .search-bar {
+    display: none; /* Oculta a barra de pesquisa no celular se estiver poluindo muito */
+  }
+
+  /* 2. Seção Início (Hero): Transforma o grid de 50/50 em uma coluna única */
+  .hero-split {
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* 3. Foto Principal: Dá uma altura fixa bonita para não cortar no celular */
+  .hero-image-container {
+    width: 100%;
+    height: 350px; /* Altura ideal para a foto aparecer inteira no mobile */
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center; /* Garante que o rosto da médica fique sempre focado */
+  }
+
+  .hero-text-container {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  /* 4. Seção Sobre: Empilha a foto e o texto */
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-image {
+    height: 300px;
+    margin-top: 20px;
+  }
+}
