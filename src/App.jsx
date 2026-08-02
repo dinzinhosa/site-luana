@@ -49,7 +49,9 @@ function App() {
           <p className="highlight-text">{conteudo.heroDestaque}</p>
           
           <h3 className="sub-heading">{conteudo.heroTituloConsulta}</h3>
-          <p>{conteudo.heroDescricao}</p>
+          
+          {/* Descrição em Markdown renderizada como HTML */}
+          <div dangerouslySetInnerHTML={{ __html: conteudo.heroDescricao }} />
         
           <a href={conteudo.contatoLinkZap} target="_blank" rel="noreferrer">
             <button className="btn-dark-blue">Agende sua consulta</button>
@@ -63,7 +65,8 @@ function App() {
           <div className="section-container about-grid">
             <div className="about-text">
               <h3>{conteudo.sobreTitulo}</h3>
-              <p>{conteudo.sobreTexto}</p>
+              {/* Texto sobre em Markdown renderizado como HTML */}
+              <div dangerouslySetInnerHTML={{ __html: conteudo.sobreTexto }} />
             </div>
             <div className="about-image">
               {conteudo.imagemSobre ? (
@@ -78,15 +81,14 @@ function App() {
         {/* SERVIÇOS */}
         <section id="servicos" className="services">
           <div className="section-container">
-            {/* O título da seção agora vem do painel. Se estiver vazio, mostra o padrão */}
             <h3>{conteudo.servicosTitulo || "Do que podemos cuidar nas consultas?"}</h3>
             
             <div className="cards">
-              {/* O comando 'map' passa por cada item cadastrado no Sveltia e cria um card na tela */}
               {conteudo.servicos && conteudo.servicos.map((servico, index) => (
                 <div className="card" key={index}>
                   <h4>{servico.titulo}</h4>
-                  <p>{servico.descricao}</p>
+                  {/* Descrição do serviço em Markdown renderizada como HTML */}
+                  <div dangerouslySetInnerHTML={{ __html: servico.descricao }} />
                 </div>
               ))}
             </div>
