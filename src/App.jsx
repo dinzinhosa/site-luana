@@ -35,7 +35,7 @@ function App() {
       <section id="inicio" className="hero-split">
         <div className="hero-image-container">
           {conteudo.imagemHero ? (
-            <img src={conteudo.imagemHero} alt="Dra. Luana" className="hero-img" />
+            <img src={conteudo.imagemHero.replace('/images/', './images/')} alt={conteudo.heroNome} className="hero-img" />
           ) : (
             <div className="image-placeholder">Sua foto aqui</div>
           )}
@@ -69,7 +69,7 @@ function App() {
             </div>
             <div className="about-image">
               {conteudo.imagemSobre ? (
-                <img src={conteudo.imagemSobre} alt="Sobre o Consultório" className="about-img" />
+                <img src={conteudo.imagemSobre.replace('/images/', './images/')} alt="Sobre o Consultório" className="about-img" />
               ) : (
                 <div className="placeholder-img">[Foto do Consultório ou Logos]</div>
               )}
