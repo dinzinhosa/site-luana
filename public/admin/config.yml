@@ -18,10 +18,12 @@ collections:
           - { label: "Nome da Médica", name: "heroNome", widget: "string" }
           - { label: "Especialidade", name: "heroEspecialidade", widget: "string" }
           - { label: "CRM", name: "heroCrm", widget: "string" }
+          - { label: "Foto Principal (Início)", name: "imagemHero", widget: "image", required: false }
           - { label: "Frase de Destaque", name: "heroDestaque", widget: "string" }
           - { label: "Título da Consulta", name: "heroTituloConsulta", widget: "string" }
           - { label: "Descrição da Consulta", name: "heroDescricao", widget: "text" }
           - { label: "Título da Seção Sobre", name: "sobreTitulo", widget: "string" }
+          - { label: "Foto do Consultório (Sobre)", name: "imagemSobre", widget: "image", required: false }
           - { label: "Texto da Seção Sobre", name: "sobreTexto", widget: "text" }
           - { label: "Endereço", name: "contatoEndereco", widget: "string" }
           - { label: "Telefone", name: "contatoTelefone", widget: "string" }

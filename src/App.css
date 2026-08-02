@@ -131,6 +131,12 @@ body {
   justify-content: center;
 }
 
+.hero-img, .about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .image-placeholder {
   color: #A1886B;
   font-weight: bold;

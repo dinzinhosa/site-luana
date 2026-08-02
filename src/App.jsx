@@ -34,7 +34,11 @@ function App() {
       {/* HERO */}
       <section id="inicio" className="hero-split">
         <div className="hero-image-container">
-          <div className="image-placeholder">Sua foto aqui</div>
+          {conteudo.imagemHero ? (
+            <img src={conteudo.imagemHero} alt="Dra. Luana" className="hero-img" />
+          ) : (
+            <div className="image-placeholder">Sua foto aqui</div>
+          )}
         </div>
         
         <div className="hero-text-container">
@@ -64,7 +68,11 @@ function App() {
               <p>{conteudo.sobreTexto}</p>
             </div>
             <div className="about-image">
-              <div className="placeholder-img">[Foto do Consultório ou Logos]</div>
+              {conteudo.imagemSobre ? (
+                <img src={conteudo.imagemSobre} alt="Sobre o Consultório" className="about-img" />
+              ) : (
+                <div className="placeholder-img">[Foto do Consultório ou Logos]</div>
+              )}
             </div>
           </div>
         </section>
