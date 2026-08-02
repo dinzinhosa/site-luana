@@ -1,4 +1,5 @@
 import './App.css'
+import conteudo from './conteudo.json'
 
 function App() {
   return (
@@ -10,9 +11,9 @@ function App() {
           <div className="logo-container">
             <div className="logo-icon">🧠</div> {/* Simulando a logo */}
             <div className="logo-text">
-              <span className="logo-name">Dra. Luana</span>
-              <span className="logo-title">Médica Psiquiatra</span>
-            </div>
+              <span className="logo-name">{conteudo.heroNome}</span>
+              <span className="logo-title">{conteudo.heroEspecialidade}</span>
+          </div>
           </div>
         </div>
         
