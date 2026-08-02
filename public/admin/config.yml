@@ -2,7 +2,10 @@ backend:
   name: github
   repo: dinzinhosa/site-luana  # <-- IMPORTANTE: Troque pelo seu usuário e nome do repositório no GitHub
   branch: main                  # <-- Ou 'master'
+  base_url: https://sveltia-cms-auth.vercel.app
+  auth_endpoint: /auth
 
+site_domain: dinzinhosa.github.io
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
