@@ -420,4 +420,5 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
+  text-decoration: none; /* Remove o sublinhado azul do link */
 }
