@@ -77,27 +77,20 @@ function App() {
           </div>
         </section>
 
-        {/* SERVIÇOS (Mantidos estáticos por enquanto, a menos que você queira gerenciar no painel também) */}
+        {/* SERVIÇOS */}
         <section id="servicos" className="services">
           <div className="section-container">
-            <h3>Do que podemos cuidar nas consultas?</h3>
+            {/* O título da seção agora vem do painel. Se estiver vazio, mostra o padrão */}
+            <h3>{conteudo.servicosTitulo || "Do que podemos cuidar nas consultas?"}</h3>
+            
             <div className="cards">
-              <div className="card">
-                <h4>Transtorno de Ansiedade</h4>
-                <p>Preocupação excessiva e persistente, com tensão, inquietação e sintomas físicos.</p>
-              </div>
-              <div className="card">
-                <h4>Transtorno Depressivo</h4>
-                <p>Tristeza persistente, perda de interesse, cansaço e dificuldade para viver o dia a dia.</p>
-              </div>
-              <div className="card">
-                <h4>Transtorno Afetivo Bipolar</h4>
-                <p>Alternância de períodos de euforia e depressão, com mudanças intensas de humor.</p>
-              </div>
-              <div className="card">
-                <h4>TDAH</h4>
-                <p>Dificuldade de atenção, impulsividade e inquietação que atrapalham o dia a dia.</p>
-              </div>
+              {/* O comando 'map' passa por cada item cadastrado no Sveltia e cria um card na tela */}
+              {conteudo.servicos && conteudo.servicos.map((servico, index) => (
+                <div className="card" key={index}>
+                  <h4>{servico.titulo}</h4>
+                  <p>{servico.descricao}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>

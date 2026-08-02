@@ -28,3 +28,5 @@ collections:
           - { label: "Endereço", name: "contatoEndereco", widget: "string" }
           - { label: "Telefone", name: "contatoTelefone", widget: "string" }
           - { label: "Link do WhatsApp", name: "contatoLinkZap", widget: "string" }
+          - { label: "Nome do Transtorno", name: "titulo", widget: "string" }
+          - { label: "Descrição", name: "descricao", widget: "text" }
