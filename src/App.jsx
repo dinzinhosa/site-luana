@@ -50,9 +50,7 @@ function App() {
           
           <h3 className="sub-heading">{conteudo.heroTituloConsulta}</h3>
           <p>{conteudo.heroDescricao}</p>
-          <p>Contato entre as consultas para tirar suas dúvidas e dar orientações.</p>
-          <p>Fale com a minha equipe pelo WhatsApp para mais informações e disponibilidade.</p>
-          
+        
           <a href={conteudo.contatoLinkZap} target="_blank" rel="noreferrer">
             <button className="btn-dark-blue">Agende sua consulta</button>
           </a>
