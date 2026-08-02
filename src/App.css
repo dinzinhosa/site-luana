@@ -351,7 +351,13 @@ footer {
 /* ========================================= */
 @media screen and (max-width: 768px) {
 
-  /* 1. Header: Empilha a logo e o menu em vez de deixar 50/50 */
+  /* 0. Header: Joga a especialidade para o lado do nome e empilha o menu */
+  .logo-text {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 6px;
+  }
+
   .main-header {
     flex-direction: column;
     padding: 15px;
@@ -407,4 +413,11 @@ footer {
     height: 300px;
     margin-top: 20px;
   }
+}
+
+/* Centraliza apenas o link/botão do Hero */
+.hero-text-container a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
