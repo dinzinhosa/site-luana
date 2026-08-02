@@ -28,5 +28,11 @@ collections:
           - { label: "Endereço", name: "contatoEndereco", widget: "string" }
           - { label: "Telefone", name: "contatoTelefone", widget: "string" }
           - { label: "Link do WhatsApp", name: "contatoLinkZap", widget: "string" }
-          - { label: "Nome do Transtorno", name: "titulo", widget: "string" }
-          - { label: "Descrição", name: "descricao", widget: "text" }
+          - { label: "Título da Seção de Consultas", name: "servicosTitulo", widget: "string" }
+          - label: "Lista de Especialidades / Doenças"
+            name: "servicos"
+            widget: "list"
+            fields:
+              - { label: "Nome do Transtorno", name: "titulo", widget: "string" }
+              - { label: "Descrição", name: "descricao", widget: "text" }
+          
