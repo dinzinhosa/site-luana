@@ -18,7 +18,7 @@ function App() {
       <header className="main-header">
         <div className="header-left">
           <div className="logo-container">
-            <img src="/logo.png" alt="Logo Luana Laurito" className="logo-img" />
+            <img src="/logo-removebg.png" alt="Logo Luana Laurito" className="logo-img" />
             <div className="logo-text">
               <span className="logo-name">{conteudo.heroNome}</span>
               <span className="logo-title">{conteudo.heroEspecialidade}</span>
