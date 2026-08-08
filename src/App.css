@@ -422,3 +422,9 @@ footer {
   width: 100%;
   text-decoration: none; /* Remove o sublinhado azul do link */
 }
+
+.logo-img {
+  height: 50px; /* Ajuste o tamanho conforme necessário */
+  width: auto;  /* Mantém a proporção da imagem */
+  display: block;
+}
