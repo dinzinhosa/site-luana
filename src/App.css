@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&display=swap');
+
 /* ========================================= */
 /* CONFIGURAÇÕES GLOBAIS & PALETA DE CORES   */
 /* ========================================= */
@@ -5,13 +7,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'DM Sans', sans-serif; /* DM Sans para todo o texto base */
 }
 
 body {
   background-color: #F6F1EA; /* Fundo Creme Quente */
   color: #34363A;            /* Texto Grafite */
   line-height: 1.6;
+}
+
+/* Força a fonte Cormorant Garamond para todos os títulos e cabeçalho */
+h1, h2, h3, h4, h5, h6,
+.main-header,
+.main-header *,
+.sub-heading {
+  font-family: 'Cormorant Garamond', serif !important;
 }
 
 /* ========================================= */
@@ -114,6 +124,7 @@ body {
   cursor: pointer;
   color: #A1886B;
 }
+
 /* ========================================= */
 /* HERO (DIVISÃO 50% IMAGEM / 50% TEXTO)     */
 /* ========================================= */
@@ -183,7 +194,7 @@ body {
 }
 
 .sub-heading {
-  font-size: 1.3rem;
+  font-size: 2rem !important; /* Padronizado para ficar do tamanho do h3 */
   color: #2F5D62;
   margin-bottom: 15px;
   font-weight: 600;
@@ -236,7 +247,7 @@ section:not(.hero-split) {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2rem !important; /* Força o alinhamento de tamanho com o .sub-heading */
   color: #2F5D62; /* Títulos de seção em Azul-Petróleo */
   margin-bottom: 40px;
   text-align: left;
