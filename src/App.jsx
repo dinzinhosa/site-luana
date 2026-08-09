@@ -133,12 +133,13 @@ function App() {
         <section id="contato" className="contact bg-gray">
           <div className="section-container contact-box">
             {/* Título e subtítulo agora puxam do CMS, com um texto padrão de segurança */}
-            <h3>{conteudo.contatoTitulo || "Detalhes para contato"}</h3>
-            <p>{conteudo.contatoSubtitulo || "Se você tem alguma dúvida ou deseja agendar, entre em contato conosco:"}</p>
+            <h3>{conteudo.contatoTitulo || ""}</h3>
+            <p>{conteudo.contatoSubtitulo || ""}</p>
             
-            <div className="contact-info">
-              {/* Renderização condicional: só mostra o <p> se o campo existir no JSON */}
-              {conteudo.contatoEndereco && <p>{conteudo.contatoEndereco}</p>}
+           <div className="contact-info">
+              {conteudo.contatoEndereco && (
+                <p dangerouslySetInnerHTML={{ __html: parseMarkdown(conteudo.contatoEndereco) }} />
+                )}
               {conteudo.contatoTelefone && <p>{conteudo.contatoTelefone}</p>}
             </div>
             
