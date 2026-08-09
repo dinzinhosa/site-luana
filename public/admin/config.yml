@@ -34,6 +34,8 @@ collections:
             fields:
               - { label: "Nome do Transtorno", name: "titulo", widget: "string", required: false }
               - { label: "Descrição", name: "descricao", widget: "markdown", required: false }
-          - { label: "Endereço", name: "contatoEndereco", widget: "string" }
-          - { label: "Telefone", name: "contatoTelefone", widget: "string" }
+          - { label: "Endereço", name: "contatoEndereco", widget: "markdown", required: false }
+          - { label: "Telefone", name: "contatoTelefone", widget: "string", required: false }
           - { label: "Link do WhatsApp", name: "contatoLinkZap", widget: "string" }
+          - { label: "Título da Seção de Contato", name: "contatoTitulo", widget: "string", required: false }
+          - { label: "Texto da Seção de Contato", name: "contatoSubtitulo", widget: "string", required: false }

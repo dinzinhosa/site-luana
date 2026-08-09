@@ -132,12 +132,16 @@ function App() {
         {/* CONTATO */}
         <section id="contato" className="contact bg-gray">
           <div className="section-container contact-box">
-            <h3>Detalhes para contato</h3>
-            <p>Se você tem alguma dúvida ou deseja agendar, entre em contato conosco:</p>
+            {/* Título e subtítulo agora puxam do CMS, com um texto padrão de segurança */}
+            <h3>{conteudo.contatoTitulo || "Detalhes para contato"}</h3>
+            <p>{conteudo.contatoSubtitulo || "Se você tem alguma dúvida ou deseja agendar, entre em contato conosco:"}</p>
+            
             <div className="contact-info">
-              <p>{conteudo.contatoEndereco}</p>
-              <p>{conteudo.contatoTelefone}</p>
+              {/* Renderização condicional: só mostra o <p> se o campo existir no JSON */}
+              {conteudo.contatoEndereco && <p>{conteudo.contatoEndereco}</p>}
+              {conteudo.contatoTelefone && <p>{conteudo.contatoTelefone}</p>}
             </div>
+            
             <a href={conteudo.contatoLinkZap} target="_blank" rel="noreferrer">
               <button className="btn-dark-blue">Agende sua consulta</button>
             </a>
