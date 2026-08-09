@@ -88,6 +88,7 @@ function App() {
         </section>
 
         {/* SERVIÇOS */}
+{/* ===== CÓDIGO ANTIGO (COM QUADROS) COMENTADO ===== 
         <section id="servicos" className="services">
           <div className="section-container">
             <h3>{conteudo.servicosTitulo || "Do que podemos cuidar nas consultas?"}</h3>
@@ -96,6 +97,30 @@ function App() {
               {conteudo.servicos && conteudo.servicos.map((servico, index) => (
                 <div className="card" key={index}>
                   <h4>{servico.titulo}</h4>
+                  <div dangerouslySetInnerHTML={{ __html: parseMarkdown(servico.descricao) }} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        ==================================================== */}
+
+        {/* ===== NOVO CÓDIGO SEM OS QUADROS ===== */}
+        <section id="servicos" className="services">
+          <div className="section-container">
+            <h3>{conteudo.servicosTitulo || "Do que podemos cuidar nas consultas?"}</h3>
+            
+            <div className="servicos-conteudo">
+              {conteudo.servicos && conteudo.servicos.map((servico, index) => (
+                <div key={index} style={{ marginBottom: '25px' }}>
+                  
+                  {/* Só renderiza o título se a médica tiver preenchido no CMS */}
+                  {servico.titulo && (
+                    <h4 style={{ marginBottom: '10px', color: '#87515A' }}>
+                      {servico.titulo}
+                    </h4>
+                  )}
+                  
                   {/* Descrição do serviço com conversão de Markdown */}
                   <div dangerouslySetInnerHTML={{ __html: parseMarkdown(servico.descricao) }} />
                 </div>
