@@ -32,7 +32,7 @@ collections:
             name: "servicos"
             widget: "list"
             fields:
-              - { label: "Nome do Transtorno", name: "titulo", widget: "string" }
+              - { label: "Nome do Transtorno", name: "titulo", widget: "string", required: false }
               - { label: "Descrição", name: "descricao", widget: "markdown", required: false }
           - { label: "Endereço", name: "contatoEndereco", widget: "string" }
           - { label: "Telefone", name: "contatoTelefone", widget: "string" }

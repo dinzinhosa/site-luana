@@ -114,7 +114,7 @@ function App() {
               <p>{conteudo.contatoTelefone}</p>
             </div>
             <a href={conteudo.contatoLinkZap} target="_blank" rel="noreferrer">
-              <button className="btn-dark-blue">Fale com a minha equipe no WhatsApp</button>
+              <button className="btn-dark-blue">Agende sua consulta</button>
             </a>
           </div>
         </section>
