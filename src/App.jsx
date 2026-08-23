@@ -161,7 +161,7 @@ function App() {
 
       {/* RODAPÉ */}
       <footer>
-        <p>© 2026 {conteudo.heroNomeCompleto}.</p>
+        <p>© 2026 Dra. Luana de Assis Ribeiro Laurito.</p>
       </footer>
     </div>
   )
