@@ -152,7 +152,7 @@ function App() {
 
               {/* Botão Principal: WhatsApp */}
               <a href={conteudo.contatoLinkZap} target="_blank" rel="noreferrer">
-                <button className="btn-dark-blue">Agende sua consulta</button>
+                <button className="btn-dark-blue">Agendamento</button>
               </a>
             </div>
           </div>
