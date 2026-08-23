@@ -340,12 +340,37 @@ h3 {
   border-bottom: none;
 }
 
-/* Centraliza o botão dentro da caixa de contato */
-.contact-box a {
+/* Container para alinhar os dois botões juntos */
+.contact-buttons {
   display: flex;
   justify-content: center;
-  width: 100%;
+  gap: 20px; /* Espaço entre um botão e outro */
+  margin-top: 10px;
+  flex-wrap: wrap; /* Se a tela do celular for pequena, um botão desce para a linha de baixo */
+}
+
+/* Tira o sublinhado azul padrão dos links */
+.contact-buttons a {
   text-decoration: none;
+}
+
+/* Novo Botão Secundário (Instagram) */
+.btn-outline {
+  background-color: transparent;
+  color: #2F5D62; /* Texto em Azul-Petróleo */
+  border: 2px solid #2F5D62; /* Borda da mesma cor */
+  padding: 15px 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse no botão do Instagram */
+.btn-outline:hover {
+  background-color: #2F5D62; /* Preenche o fundo */
+  color: #F6F1EA; /* Texto fica Creme */
 }
 
 .contact-info {
