@@ -144,14 +144,15 @@ function App() {
             </div>
             
             <div className="contact-buttons">
+              
+              {/* Botão Secundário: Instagram */}
+              <a href="https://instagram.com/draluanalaurito" target="_blank" rel="noreferrer">
+                <button className="btn-outline">Instagram</button>
+              </a>
+
               {/* Botão Principal: WhatsApp */}
               <a href={conteudo.contatoLinkZap} target="_blank" rel="noreferrer">
                 <button className="btn-dark-blue">Agende sua consulta</button>
-              </a>
-
-              {/* Botão Secundário: Instagram */}
-              <a href="https://instagram.com/draluanalaurito" target="_blank" rel="noreferrer">
-                <button className="btn-outline">Siga no Instagram</button>
               </a>
             </div>
           </div>
