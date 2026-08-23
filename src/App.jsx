@@ -152,7 +152,7 @@ function App() {
 
       {/* RODAPÉ */}
       <footer>
-        <p>© 2026 {conteudo.heroNome}.</p>
+        <p>© 2026 {conteudo.heroNomeCompleto}.</p>
       </footer>
     </div>
   )
