@@ -211,14 +211,13 @@ h1, h2, h3, h4, h5, h6,
 .btn-dark-blue {
   background-color: #87515A;
   color: #F6F1EA;
-  border: 1px solid transparent;
+  border: 2px solid transparent; /* Mudamos de 1px para 2px para igualar ao botão do Instagram */
   padding: 15px 40px;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 30px;
   cursor: pointer;
   align-self: flex-start;
-  margin-top: 10px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(135, 81, 90, 0.2);
 }
@@ -343,10 +342,11 @@ h3 {
 /* Container para alinhar os dois botões juntos */
 .contact-buttons {
   display: flex;
-  justify-content: center;
-  gap: 20px; /* Espaço entre um botão e outro */
-  margin-top: 10px;
-  flex-wrap: wrap; /* Se a tela do celular for pequena, um botão desce para a linha de baixo */
+  justify-content: flex-start; /* Alinha os botões à esquerda para acompanhar o texto */
+  align-items: center; /* Garante que fiquem na mesma linha horizontalmente */
+  gap: 20px; 
+  margin-top: 20px; /* Um respiro um pouco maior em relação ao texto */
+  flex-wrap: wrap; 
 }
 
 /* Tira o sublinhado azul padrão dos links */
