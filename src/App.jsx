@@ -62,7 +62,7 @@ function App() {
           {/* Descrição com conversão de Markdown */}
           <div dangerouslySetInnerHTML={{ __html: parseMarkdown(conteudo.heroDescricao) }} />
         
-          <a href={conteudo.contatoLinkZap} target="_blank" rel="noreferrer">
+          <a href={conteudo.contatoLinkZap} target="_blank" rel="noreferrer" style={{ marginTop: '30px' }}>
             <button className="btn-dark-blue">Agende sua consulta</button>
           </a>
         </div>
