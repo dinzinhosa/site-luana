@@ -1,16 +1,22 @@
-# React + Vite
+# Site da Dra. Luana Laurito
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site médico estático em HTML, CSS e JavaScript, preparado para publicação no GitHub Pages.
 
-Currently, two official plugins are available:
+## Páginas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Home
+- Sobre a Dra. Luana Laurito
+- Ansiedade, estresse e dificuldade para relaxar
+- Insônia e dificuldade para dormir
+- Depressão, cansaço e alterações do humor
+- Política de Privacidade
+- Página 404
 
-## React Compiler
+## Estado de publicação
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- publicação automática no GitHub Pages a partir da branch `main`;
+- domínio existente `draluanalaurito.com.br` preservado;
+- todas as páginas usam `noindex, nofollow`;
+- o `robots.txt` bloqueia todos os crawlers.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O site não usa formulário, analytics, cookies de publicidade, framework ou dependências externas.

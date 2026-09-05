@@ -4,13 +4,11 @@ on:
   push:
     branches: ["main"]
 
-# Permissões necessárias para o robô ler o código e publicar no Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Impede que dois robôs rodem ao mesmo tempo e se atropelem
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -26,24 +24,13 @@ jobs:
       - name: Baixar o código
         uses: actions/checkout@v4
 
-      - name: Preparar o Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Instalar dependências
-        run: npm install
-
-      - name: Gerar versão de produção (Build)
-        run: npm run build
-
       - name: Configurar o GitHub Pages
         uses: actions/configure-pages@v4
 
       - name: Empacotar os arquivos (Upload)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: '.'
 
       - name: Publicar no Site
         id: deployment
