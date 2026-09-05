@@ -15,7 +15,7 @@ Site médico estático em HTML, CSS e JavaScript, preparado para publicação no
 ## Estado de publicação
 
 - publicação automática no GitHub Pages a partir da branch `main`;
-- domínio existente `draluanalaurito.com.br` preservado;
+- domínio existente `luanalaurito.com.br` preservado;
 - todas as páginas usam `noindex, nofollow`;
 - o `robots.txt` bloqueia todos os crawlers.
 
