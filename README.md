@@ -19,4 +19,4 @@ Site médico estático em HTML, CSS e JavaScript, preparado para publicação no
 - todas as páginas usam `noindex, nofollow`;
 - o `robots.txt` bloqueia todos os crawlers.
 
-O site não usa formulário, analytics, cookies de publicidade, framework ou dependências externas.
+O site não possui formulário ou framework. Utiliza a Google tag do Google Ads para medir conversões geradas por cliques nos links de WhatsApp. O código de conversão não implementa Enhanced Conversions ou `user_data` e não envia nomes, telefones, mensagens, conteúdo dos links ou dados de saúde.
